@@ -1,0 +1,47 @@
+body{text-align: center;
+    background-color: aliceblue;
+    margin: 100px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+button{
+    background-color: lightyellow;
+    border-radius: 5px;
+    box-shadow: #007BFF;
+    border: 2px solid;
+    text-align: center;
+    padding: 10px 5px;
+    margin-top: 50px;
+}
+
+.card-content {
+    margin: 10px 0;
+}
+
+.joke {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.setup {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.delivery {
+    font-size: 1.5em;
+    color: #007BFF; /* Bootstrap primary color */
+}
+

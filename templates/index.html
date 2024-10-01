@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Jokes</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+        
+    </head>
+
+    <body>
+        <h1>Jokes for you because you're the biggest joke</h1>
+
+        <div class="card">
+            
+            <!-- <div><h2>Joke</h2></div> -->
+            <div class="card-content">
+                <h2>Joke</h2>
+            
+                {%if response['type']=='single'%}
+                <p class="joke">{{response['joke']}}</p>
+                {%elif response['type']=='twopart'%}
+                <p class="setup">{{response['setup']}}</p>
+                <p class="delivery">{{response['delivery']}} </p>
+                {%endif%}
+
+
+        
+            </div>
+        </div>
+        <form action="{{ url_for('index') }}" method="get">
+            <button type="submit">Next Joke</button>
+        </form>
+
+    </body>
+
+</html>
